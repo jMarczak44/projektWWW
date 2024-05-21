@@ -2,7 +2,9 @@
     margin: 0;
     padding: 0;
 }
-.header{
+
+/* nagłówek */
+.header{ 
     min-height: 100vh;
     width: 100%;
     background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(img/ww.jpg);
@@ -10,18 +12,22 @@
     background-size: cover;
     position: relative;
 }
-nav {
+
+/* pasek nawigacji */
+nav { 
     display: flex;
     padding: 2% 6%;
     justify-content: space-between;
     align-items: center; 
 }
 
-nav img {
+/* logo w nawigacji */
+nav img { 
     width:150px;
 }
 
-.nav-links {
+/* nawigacja  */
+.nav-links { 
     flex: 1;
     text-align: right;
 }
@@ -39,7 +45,8 @@ nav img {
     font-size: 13px;
 }
 
-.nav-links ul li::after{
+/* animacje nawigacji */
+.nav-links ul li::after{ 
     content: '';
     width: 0%;
     height: 2px;
@@ -49,11 +56,13 @@ nav img {
     transition: 0.5s;
 }
 
-.nav-links ul li:hover::after{
+
+.nav-links ul li:hover::after{ 
     width: 100%;
 }
 
-.text-box{
+/* przycisk na glownej */
+.text-box{ 
     width: 90%;
     color: #fff;
     position: absolute;
@@ -73,6 +82,7 @@ nav img {
     color: #fff;
 }
 
+/* styk przycisku */
 .hero-btn{
     display: inline-block;
     text-decoration: none;
@@ -83,4 +93,30 @@ nav img {
     background: transparent;
     position: relative;
     cursor: pointer;
+}
+
+.hero-btn:hover{
+    border: 1px solid #479b03;
+    background: #479b03;
+    transition: 1s;
+}
+
+/* Responsywnosc */
+@media (max-width: 700px){
+    .text-box h1{
+        font-size: 20px;
+    }
+    .nav-links ul li {
+        display: block;
+    }
+    .nav-links {
+        position: absolute;
+        background: #479b03;
+        height: 100vh;
+        width: 200px;
+        top: 0;
+        right: 0;
+        text-align: left;
+        z-index: 2;
+    }
 }
