@@ -100,3 +100,9 @@ img {
     border-color: var(--c-brand-light);
     color: white;
 }
+
+/* hero/glowna */
+
+#hero {
+    background: linear-gradient(#000, #0000),url(../img/ww.jpg);
+}
