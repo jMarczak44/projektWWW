@@ -5,8 +5,8 @@
 
 :root {
     --c-dark: #212529;
-    --c-brand: #4e57d4;
-    --c-brand-light: #6970dd;
+    --c-brand: #95d44e;
+    --c-brand-light: #b4dd69;
     --c-brand-rgb: 78, 87, 212;
     --c-body: #727272;
     --font-base: "ClashDisplay", sans-serif;
@@ -66,6 +66,11 @@ img {
     box-shadow: var(--box-shadow);
 }
 
+/* logo */
+.navbar-brand{
+     width: 250px;
+}
+
 
 
 .navbar-nav .nav-link {
@@ -104,7 +109,8 @@ img {
 /* hero/glowna */
 
 #hero {
-    background: linear-gradient(#000, #0000),url(../img/ww.jpg);
+    /* kolory do poprawy */
+    background: linear-gradient(rgba(var(--c-brand-rgb),0.507),rgba(var(--c-brand-rgb),0.438)),url(../img/ww.jpg); 
     background-position: center;
     background-size: cover;
 }
