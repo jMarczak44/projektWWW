@@ -1,8 +1,8 @@
-document.getElementById('myForm').addEventListener('submit', function(event) 
+document.getElementById('credValid').addEventListener('submit', function(event) 
 {
     //stopper
     event.preventDefault();
-    
+
     var isValid = true;
 
     // pobieranie wartosci z forma
