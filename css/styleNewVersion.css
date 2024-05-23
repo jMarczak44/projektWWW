@@ -1,6 +1,7 @@
+/* fonts */
 @import url(clash-display.css);
 
-/* zmienne */
+/* variables*/
 
 :root {
     --c-dark: #212529;
@@ -14,7 +15,7 @@
 
 }
 
-/* poczatek css */
+/* reset/helpers */
 
 body {
     font-family: var(--font-base);
@@ -57,4 +58,45 @@ img {
 .section-padding {
     padding-top: 140px;
     padding-bottom: 140px;
+}
+
+/* nav */
+
+.navbar {
+    box-shadow: var(--box-shadow);
+}
+
+
+
+.navbar-nav .nav-link {
+    font-weight: 500;
+    color: var(--c-dark);
+
+}
+
+.navbar-nav .nav-link.active {
+    color: var(--c-brand);
+}
+
+/* btn */
+
+.btn {
+    font-weight: 500;
+    font-size: 14px;
+    text-transform: uppercase;
+    border-radius: 0;
+    padding: 10px 24px;
+}
+
+.btn-brand {
+    background-color: var(--c-brand);
+    border-color: var(--c-brand);
+    color: white;
+
+}
+
+.btn-brand:hover {
+    background-color: var(--c-brand-light);
+    border-color: var(--c-brand-light);
+    color: white;
 }
