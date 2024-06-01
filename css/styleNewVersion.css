@@ -65,6 +65,27 @@ img {
     box-shadow: var(--box-shadow);
 }
 
+/* Image zoom */
+
+.image-zoom {
+    position: relative;
+    overflow: hidden; 
+}
+
+.image-zoom-wrapper {
+    overflow: hidden;
+    position: relative;
+}
+
+.image-zoom-wrapper img {
+    transition: transform 0.5s ease-in-out;
+}
+
+.image-zoom:hover .image-zoom-wrapper img {
+    transform: scale(1.1);
+}
+
+
 /* nav */
 
 .navbar {
@@ -189,10 +210,33 @@ img {
     color: white;
 }
 
-/* Counter */
+/* Staty */
 #counter {
     background: linear-gradient(rgba(var(--c-brand-rgb), 0.8), rgba(var(--c-brand-rgb), 0.8)), url(../img/Zugpsitze_mountain.jpg);
     background-position: center;
     background-size: cover;
 }
 
+/* Galeria */
+
+.portfolio-item .iconbox {
+    background-color: var(--c-brand);
+    color: white;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    transition: opacity 0.5s ease, top 0.5s ease; 
+    width: 50px; 
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px; 
+}
+
+.portfolio-item:hover .iconbox {
+    opacity: 1;
+    top: 50%;
+}
