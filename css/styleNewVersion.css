@@ -20,7 +20,7 @@
 body {
     font-family: var(--font-base);
     line-height: 1.7;
-    color: var(--c-body);
+    color: var(--c-dark);
 }
 
 /*  */
@@ -38,6 +38,7 @@ h6,
 .h5,
 h6 {
     font-weight: 600;
+    color: var(c-);
 }
 
 a {
@@ -113,4 +114,37 @@ img {
     background: linear-gradient(rgba(var(--c-brand-rgb),0.507),rgba(var(--c-brand-rgb),0.438)),url(../img/ww.jpg); 
     background-position: center;
     background-size: cover;
+}
+
+/* Sekcja Title */
+.section-title{
+    margin-bottom: 60px;
+}
+
+
+.section-title .line{
+    width: 60px;
+    height: 4px;
+    background-color: var(--c-brand);
+    margin: 16px auto 24px auto;
+}
+
+.section-title p {
+    max-width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Iconbox */
+
+.iconbox {
+    width: 6;
+    height: 60px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(var(--c-brand-rgb),0.2);
+    color: var(--c-brand);
+    font-size: 34px;
+    flex: none;
 }
