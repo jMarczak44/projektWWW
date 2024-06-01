@@ -7,7 +7,7 @@
     --c-dark: #212529;
     --c-brand: #95d44e;
     --c-brand-light: #b4dd69;
-    --c-brand-rgb: 78, 87, 212;
+    --c-brand-rgb: 182, 212, 66;
     --c-body: #727272;
     --font-base: "ClashDisplay", sans-serif;
     --box-shadow: 0px 15px 25px rgba(0, 0, 0, 0.08);
@@ -61,6 +61,10 @@ img {
     padding-bottom: 140px;
 }
 
+.theme-shadow {
+    box-shadow: var(--box-shadow);
+}
+
 /* nav */
 
 .navbar {
@@ -68,8 +72,8 @@ img {
 }
 
 /* logo */
-.navbar-brand{
-     width: 250px;
+.navbar-brand {
+    width: 250px;
 }
 
 
@@ -111,18 +115,18 @@ img {
 
 #hero {
     /* kolory do poprawy */
-    background: linear-gradient(rgba(var(--c-brand-rgb),0.507),rgba(var(--c-brand-rgb),0.438)),url(../img/ww.jpg); 
+    background: linear-gradient(rgba(var(--c-brand-rgb), 0.507), rgba(var(--c-brand-rgb), 0.438)), url(../img/ww.jpg);
     background-position: center;
     background-size: cover;
 }
 
 /* Sekcja Title */
-.section-title{
+.section-title {
     margin-bottom: 60px;
 }
 
 
-.section-title .line{
+.section-title .line {
     width: 60px;
     height: 4px;
     background-color: var(--c-brand);
@@ -143,8 +147,45 @@ img {
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    background: rgba(var(--c-brand-rgb),0.2);
+    /* nwm czy nie usunac tego tla przy ikonkach */
+    background: rgba(var(--c-brand-rgb), 0.2); 
     color: var(--c-brand);
     font-size: 34px;
     flex: none;
+}
+
+/* Service */
+
+.service {
+    position: relative;
+    overflow: hidden;
+    z-index: 2;
+}
+
+.service::after {
+    content: "";
+    width: 40px;
+    height: 40px;
+    background: rgba(var(--c-brand-rgb), 0.2);
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    transition: width 0.3s ease, height 0.3s ease, background 0.3s ease;
+}
+
+.service:hover::after {
+    width: 100%;
+    height: 100%;
+    background: var(--c-brand);
+    z-index: -1;
+}
+
+.service:hover h5,
+.service:hover p {
+    color: white;
+}
+
+.service:hover .iconbox{
+    background-color: rgba(255, 255, 255, 0.2);
+    color: white;
 }
