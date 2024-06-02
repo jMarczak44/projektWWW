@@ -336,54 +336,58 @@
 </div>
 </section>
 
-    <!-- Contact Form -->
-    <section id="form" class="section-padding">
-        <div class="container">
-            <div class="row">
-                <div class="col-12 text-center">
-                    <div class="section-title">
-                        <h1 class="display-4 fw-semibold">Formularz kontaktowy</h1>
-                        <div class="line"></div>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="row justify-content-center">
-                <div class="col-lg-8">
-                    <form id="contactForm" class="needs-validation" novalidate>
-                        <div class="mb-3">
-                            <label for="name" class="form-label">Imię i nazwisko</label>
-                            <input type="text" class="form-control" id="name" required>
-                            <div class="invalid-feedback">Proszę podać imię i nazwisko.</div>
-                        </div>
-                        <div class="mb-3">
-                            <label for="email" class="form-label">Email</label>
-                            <input type="email" class="form-control" id="email" required>
-                            <div class="invalid-feedback">Proszę podać prawidłowy adres email.</div>
-                        </div>
-                        <div class="mb-3">
-                            <label for="message" class="form-label">Wiadomość</label>
-                            <textarea class="form-control" id="message" rows="5" required></textarea>
-                            <div class="invalid-feedback">Proszę wpisać treść wiadomości.</div>
-                        </div>
-                        <div class="d-grid">
-                            <button class="btn btn-brand" type="submit">Wyślij</button>
-                        </div>
-                        <div id="loadingSpinner" class="text-center mt-3">
-                            <div class="spinner-border text-primary" role="status">
-                                <span class="visually-hidden">Ładowanie...</span>
-                            </div>
-                        </div>
-                        <div id="successMessage" class="alert alert-success mt-3" role="alert">
-                            Twoja wiadomość została wysłana pomyślnie!
-                        </div>
-                    </form>
+<!-- Contact Form -->
+<section id="form" class="section-padding">
+    <div class="container">
+        <div class="row">
+            <div class="col-12 text-center">
+                <div class="section-title">
+                    <h1 class="display-4 fw-semibold">Formularz kontaktowy</h1>
+                    <div class="line"></div>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
                 </div>
             </div>
         </div>
-    </section>
-
+        <div class="row justify-content-center">
+            <div class="col-lg-8">
+                <form id="contactForm" class="needs-validation" novalidate>
+                    <div class="mb-3">
+                        <label for="name" class="form-label">Imię i nazwisko</label>
+                        <input type="text" class="form-control" id="name" required>
+                        <div class="invalid-feedback">Proszę podać imię i nazwisko.</div>
+                    </div>
+                    <div class="mb-3">
+                        <label for="email" class="form-label">Email</label>
+                        <input type="email" class="form-control" id="email" required>
+                        <div class="invalid-feedback">Proszę podać prawidłowy adres email.</div>
+                    </div>
+                    <div class="mb-3">
+                        <label for="message" class="form-label">Wiadomość</label>
+                        <textarea class="form-control" id="message" rows="5" required></textarea>
+                        <div class="invalid-feedback">Proszę wpisać treść wiadomości.</div>
+                    </div>
+                    <div class="mb-3 form-check">
+                        <input type="checkbox" class="form-check-input" id="dataProcessing" required>
+                        <label class="form-check-label" for="dataProcessing">Wyrażam zgodę na przetwarzanie moich danych osobowych.</label>
+                        <div class="invalid-feedback">Musisz wyrazić zgodę na przetwarzanie danych przed wysłaniem formularza.</div>
+                    </div>
+                    <div class="d-grid">
+                        <button class="btn btn-brand" type="submit">Wyślij</button>
+                    </div>
+                    <div id="loadingSpinner" class="text-center mt-3">
+                        <div class="spinner-border text-primary" role="status">
+                            <span class="visually-hidden">Ładowanie...</span>
+                        </div>
+                    </div>
+                    <div id="successMessage" class="alert alert-success mt-3" role="alert">
+                        Twoja wiadomość została wysłana pomyślnie!
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
     <!-- Kontakt -->
     <section id="contact" class="bg-white text-dark section-padding border-top">
         <div class="container">
