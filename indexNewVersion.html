@@ -313,11 +313,76 @@
     </div>
 </section>
 
+<!-- formularz -->
 
-    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
-    <script src="	https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"></script>
+<section id="forms">
+    <div class="container">
+    <form class="row g-3 needs-validation" novalidate>
+        <div class="form-group row">
+            <div class="col-md-3 col-form-label">
+                <label for="validationCustom01" class="form-label">Imię</label>
+                <input type="text" class="form-control" id="validationCustom01" required>
+                <div class="invalid-feedback">
+                    Proszę podać imię!
+                </div>
+            </div>
+        </div>
+        <div class="form-group row">
+            <div class="col-md-3">
+                <label for="validationCustom02" class="form-label">Nazwisko</label>
+                <input type="text" class="form-control" id="validationCustom02" required>
+                <div class="invalid-feedback">
+                    Proszę podać nazwisko!
+                </div>
+            </div>
+        </div>
+        <div class="form-group row">
+            <div class="col-md-3 col-form-label">
+                <label for="validationCustomUsername" class="form-label">Adres e-mail</label>
+                <div class="input-group has-validation">
+                    <input type="text" class="form-control" id="validationCustomUsername" aria-describedby="inputGroupPrepend" required>
+                    <div class="invalid-feedback">
+                        Proszę podać adres e-mail!
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="form-group row">
+            <div class="col-12 col-form-label">
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
+                    <label class="form-check-label" for="invalidCheck">
+                        Zgadzam się na przetwarzanie moich danych.
+                    </label>
+                    <div class="invalid-feedback">
+                        Musisz zaznaczyć zgodę o przetwarzaniu danych.
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="form-group row">
+            <div class="col-12 col-form-label">
+                <button class="btn btn-primary" type="submit">
+                    Prześlij
+                </button>
+            </div>
+        </div>
+        <div class="form-group row">
+            <div class="col-sm-1 col-form-label">
+                <div id="successMessage" class="alert alert-success" role="alert" style="display: none;">
+                    Przesłano!
+                </div>
+            </div>
+        </div>
+    </form>
+    </div>
+</section>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/5.0.0/js/bootstrap.min.js"></script>
+<script src="js/bootstrapform.js"></script>
+
 </body>
 
 </html>

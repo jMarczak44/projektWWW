@@ -240,3 +240,30 @@ img {
     opacity: 1;
     top: 50%;
 }
+
+/* formularz */
+
+.invalid-feedback {
+    display: none;
+}
+.is-invalid + .invalid-feedback {
+    display: block;
+}
+
+.form-group {
+    margin-top: 2rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.btn-primary {
+    background-color: var(--c-brand);
+    border-color: var(--c-brand);
+    color: white;
+}
+
+.form-check-input {
+    background-color: var(--c-brand);
+    border-color: var(--c-brand);
+    color: white;
+}
