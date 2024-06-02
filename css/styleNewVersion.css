@@ -1,12 +1,13 @@
+/* fonts */
 @import url(clash-display.css);
 
-/* zmienne */
+/* variables*/
 
 :root {
     --c-dark: #212529;
-    --c-brand: #4e57d4;
-    --c-brand-light: #6970dd;
-    --c-brand-rgb: 78, 87, 212;
+    --c-brand: #95d44e;
+    --c-brand-light: #b4dd69;
+    --c-brand-rgb: 182, 212, 66;
     --c-body: #727272;
     --font-base: "ClashDisplay", sans-serif;
     --box-shadow: 0px 15px 25px rgba(0, 0, 0, 0.08);
@@ -14,12 +15,12 @@
 
 }
 
-/* poczatek css */
+/* reset/helpers */
 
 body {
     font-family: var(--font-base);
     line-height: 1.7;
-    color: var(--c-body);
+    color: var(--c-dark);
 }
 
 /*  */
@@ -37,6 +38,7 @@ h6,
 .h5,
 h6 {
     font-weight: 600;
+    color: var(c-);
 }
 
 a {
@@ -57,4 +59,184 @@ img {
 .section-padding {
     padding-top: 140px;
     padding-bottom: 140px;
+}
+
+.theme-shadow {
+    box-shadow: var(--box-shadow);
+}
+
+/* Image zoom */
+
+.image-zoom {
+    position: relative;
+    overflow: hidden; 
+}
+
+.image-zoom-wrapper {
+    overflow: hidden;
+    position: relative;
+}
+
+.image-zoom-wrapper img {
+    transition: transform 0.5s ease-in-out;
+}
+
+.image-zoom:hover .image-zoom-wrapper img {
+    transform: scale(1.1);
+}
+
+
+/* nav */
+
+.navbar {
+    box-shadow: var(--box-shadow);
+}
+
+/* logo */
+.navbar-brand {
+    width: 250px;
+}
+
+
+
+.navbar-nav .nav-link {
+    font-weight: 500;
+    color: var(--c-dark);
+
+}
+
+.navbar-nav .nav-link.active {
+    color: var(--c-brand);
+}
+
+/* btn */
+
+.btn {
+    font-weight: 500;
+    font-size: 14px;
+    text-transform: uppercase;
+    border-radius: 0;
+    padding: 10px 24px;
+}
+
+.btn-brand {
+    background-color: var(--c-brand);
+    border-color: var(--c-brand);
+    color: white;
+
+}
+
+.btn-brand:hover {
+    background-color: var(--c-brand-light);
+    border-color: var(--c-brand-light);
+    color: white;
+}
+
+/* hero/glowna */
+
+#hero {
+    background: linear-gradient(rgba(var(--c-brand-rgb), 0.507), rgba(var(--c-brand-rgb), 0.438)), url(../img/ww.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+/* Sekcja Title */
+.section-title {
+    margin-bottom: 60px;
+}
+
+
+.section-title .line {
+    width: 60px;
+    height: 4px;
+    background-color: var(--c-brand);
+    margin: 16px auto 24px auto;
+}
+
+.section-title p {
+    max-width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Iconbox */
+
+.iconbox {
+    width: 6;
+    height: 60px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    /* nwm czy nie usunac tego tla przy ikonkach */
+    background: rgba(var(--c-brand-rgb), 0.2); 
+    color: var(--c-brand);
+    font-size: 34px;
+    flex: none;
+}
+
+/* Service */
+
+.service {
+    position: relative;
+    overflow: hidden;
+    z-index: 2;
+}
+
+.service::after {
+    content: "";
+    width: 40px;
+    height: 40px;
+    background: rgba(var(--c-brand-rgb), 0.2);
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    transition: width 0.3s ease, height 0.3s ease, background 0.3s ease;
+}
+
+.service:hover::after {
+    width: 100%;
+    height: 100%;
+    background: var(--c-brand);
+    z-index: -1;
+}
+
+.service:hover h5,
+.service:hover p {
+    color: white;
+}
+
+.service:hover .iconbox{
+    background-color: rgba(255, 255, 255, 0.2);
+    color: white;
+}
+
+/* Staty */
+#counter {
+    background: linear-gradient(rgba(var(--c-brand-rgb), 0.8), rgba(var(--c-brand-rgb), 0.8)), url(../img/Zugpsitze_mountain.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+/* Galeria */
+
+.portfolio-item .iconbox {
+    background-color: var(--c-brand);
+    color: white;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    transition: opacity 0.5s ease, top 0.5s ease; 
+    width: 50px; 
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px; 
+}
+
+.portfolio-item:hover .iconbox {
+    opacity: 1;
+    top: 50%;
 }
