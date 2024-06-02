@@ -1,0 +1,457 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Speszal Forses</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css" />
+    <link rel="stylesheet" href="css/styleNewVersion.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css">
+    <style>
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        .fade-in {
+            animation: fadeIn 1s ease-in-out;
+        }
+        .invalid-feedback {
+            display: none;
+        }
+        .was-validated .form-control:invalid ~ .invalid-feedback {
+            display: block;
+            animation: fadeIn 0.5s;
+        }
+        #successMessage {
+            display: none;
+            animation: fadeIn 1s;
+        }
+        #loadingSpinner {
+            display: none;
+            animation: fadeIn 0.5s infinite;
+        }
+    </style>
+</head>
+
+
+<body>
+
+    <!-- Nav -->
+
+    <nav class="navbar navbar-expand-lg bg-white sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <img src="img/logo 3.png" alt="Error no logo">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#home">Formularz</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#form">Formularz</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Kontakt</a>
+                    </li>
+                </ul>
+                <a href="#" class="btn btn-brand ms-lg-3">Lorem ipsum</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- hero glowna -->
+
+    <section id="hero" class="min-vh-100 d-flex align-items-center text-center">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <h1 class="text-uppercase text-white fw-semibold display-1">Speszal Forses</br>(W trakcie pracy)
+                    </h1>
+                    <h5 class="text-white mt-3 mb-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</h5>
+                    <div>
+                        <a href="#" class="btn btn-brand me-2">Get Started</a>
+                        <a href="#" class="btn btn-brand ms-2">Lorem ispum</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- about -->
+    <section id="about" class="section-padding">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center">
+                    <div class="section-title">
+                        <h1 class="display-4 fw-semibold">About us</h1>
+                        <div class="line"></div>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row justify-content-between align-items-center">
+                <div class="col-lg-6">
+                    <img src="img/wp10292326.jpg" alt="aboutImg">
+                </div>
+                <div class="col-lg-5">
+                    <h1>About Speszal Forses</h1>
+                    <p class="mt-3 mb-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    <div class="d-flex pt-4 mb-3">
+                        <div class="iconbox me-4">
+                            <i class="ri-mail-send-line"></i>
+                        </div>
+                        <div>
+                            <h5>We are Awesome</h5>
+                            <p>Lorem ipsum dolor sit amet.</p>
+                        </div>
+                    </div>
+                    <div class="d-flex mb-3">
+                        <div class="iconbox me-4">
+                            <i class="ri-user-5-fill"></i>
+                        </div>
+                        <div>
+                            <h5>We are Awesome</h5>
+                            <p>Lorem ipsum dolor sit amet.</p>
+                        </div>
+                    </div>
+                    <div class="d-flex">
+                        <div class="iconbox me-4">
+                            <i class="ri-rocket-2-fill"></i>
+                        </div>
+                        <div>
+                            <h5>We are Awesome</h5>
+                            <p>Lorem ipsum dolor sit amet.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services -->
+    <section id="services" class="section-padding border-top">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center">
+                    <div class="section-title">
+                        <h1 class="display-4 fw-semibold">Lorem ipsum</h1>
+                        <div class="line"></div>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row g-4 text-center">
+                <div class="col-lg-4 col-sm-6">
+                    <div class="service theme-shadow p-lg-5 p-4">
+                        <div class="iconbox">
+                            <i class="ri-stack-fill"></i>
+                        </div>
+                        <h5 class="mt-4 mb-3">Lorem ispum</h5>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At mollitia numquam est.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6">
+                    <div class="service theme-shadow p-lg-5 p-4">
+                        <div class="iconbox">
+                            <i class="ri-stack-fill"></i>
+                        </div>
+                        <h5 class="mt-4 mb-3">Lorem ispum</h5>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At mollitia numquam est.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6">
+                    <div class="service theme-shadow p-lg-5 p-4">
+                        <div class="iconbox">
+                            <i class="ri-stack-fill"></i>
+                        </div>
+                        <h5 class="mt-4 mb-3">Lorem ispum</h5>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At mollitia numquam est.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6">
+                    <div class="service theme-shadow p-lg-5 p-4">
+                        <div class="iconbox">
+                            <i class="ri-stack-fill"></i>
+                        </div>
+                        <h5 class="mt-4 mb-3">Lorem ispum</h5>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At mollitia numquam est.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6">
+                    <div class="service theme-shadow p-lg-5 p-4">
+                        <div class="iconbox">
+                            <i class="ri-stack-fill"></i>
+                        </div>
+                        <h5 class="mt-4 mb-3">Lorem ispum</h5>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At mollitia numquam est.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6">
+                    <div class="service theme-shadow p-lg-5 p-4">
+                        <div class="iconbox">
+                            <i class="ri-stack-fill"></i>
+                        </div>
+                        <h5 class="mt-4 mb-3">Lorem ispum</h5>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At mollitia numquam est.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+ <!-- Staty -->
+ <section id="counter" class="section-padding">
+    <div class="container text-center">
+        <div class="row">
+            <div class="col-lg col-sm-6">
+                <h1 class="text-white display-4">33,00+</h1>
+                <h6 class="text-uppercase mb-0 text-white mt-3">Lorem ipsum</h6>
+            </div>
+            <div class="col-lg col-sm-6">
+                <h1 class="text-white display-4">44K+</h1>
+                <h6 class="text-uppercase mb-0 text-white mt-3">Lorem ipsum (np studenci)</h6>
+            </div>
+            <div class="col-lg col-sm-6">
+                <h1 class="text-white display-4">77M+</h1>
+                <h6 class="text-uppercase mb-0 text-white mt-3">Lorem ipsum (cos wymysl)</h6>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Galeria -->
+<section id="gallery" class="section-padding">
+    <div class="container">
+        <div class="row">
+            <div class="col-12 text-center">
+                <div class="section-title">
+                    <h1 class="display-4 fw-semibold">Galeria</h1>
+                    <div class="line"></div>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                </div>
+            </div>
+        </div>
+        <div class="row g-4">
+            <div class="col-md-4">
+                <div class="portfolio-item image-zoom">
+                    <div class="image-zoom-wrapper">
+                        <img src="img/9c7be43979a736a8695361a544630b97.jpg" alt="galeria">
+                    </div>
+                    <a href="./img/9c7be43979a736a8695361a544630b97.jpg" data-fancybox="gallery" class="iconbox"><i
+                            class="ri-search-2-line"></i></a>
+                </div>
+                <div class="portfolio-item image-zoom mt-4">
+                    <div class="image-zoom-wrapper">
+                        <img src="img/ww.jpg" alt="galeria">
+                    </div>
+                    <a href="./img/ww.jpg" data-fancybox="gallery" class="iconbox"><i
+                            class="ri-search-2-line"></i></a>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="portfolio-item image-zoom">
+                    <div class="image-zoom-wrapper">
+                        <img src="img/9c7be43979a736a8695361a544630b97.jpg" alt="galeria">
+                    </div>
+                    <a href="./img/9c7be43979a736a8695361a544630b97.jpg" data-fancybox="gallery" class="iconbox"><i
+                            class="ri-search-2-line"></i></a>
+                </div>
+                <div class="portfolio-item image-zoom mt-4">
+                    <div class="image-zoom-wrapper">
+                        <img src="img/ww.jpg" alt="galeria">
+                    </div>
+                    <a href="./img/ww.jpg" data-fancybox="gallery" class="iconbox"><i
+                            class="ri-search-2-line"></i></a>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="portfolio-item image-zoom">
+                    <div class="image-zoom-wrapper">
+                        <img src="img/9c7be43979a736a8695361a544630b97.jpg" alt="galeria">
+                    </div>
+                    <a href="./img/9c7be43979a736a8695361a544630b97.jpg" data-fancybox="gallery" class="iconbox"><i
+                            class="ri-search-2-line"></i></a>
+                </div>
+                <div class="portfolio-item image-zoom mt-4">
+                    <div class="image-zoom-wrapper">
+                        <img src="img/ww.jpg" alt="galeria">
+                    </div>
+                    <a href="./img/ww.jpg" data-fancybox="gallery" class="iconbox"><i
+                            class="ri-search-2-line"></i></a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<!-- Opinie  -->
+<section id="reviews" class="section-padding bg-light">
+<div class="container">
+    <div class="row">
+        <div class="col-12 text-center">
+            <div class="section-title">
+                <h1 class="display-4 fw-semibold">Opinie</h1>
+                <div class="line"></div>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            </div>
+        </div>
+    </div>
+    <div class="row gy-5 gx-4">
+        <div class="col-lg-4 col-sm-6" >
+            <div class="review">
+                <div class="review-head">
+                    <div>
+                        <i class="ri-star-fill"></i>
+                        <i class="ri-star-fill"></i>
+                        <i class="ri-star-fill"></i>
+                        <i class="ri-star-fill"></i>
+                        <i class="ri-star-fill"></i>                            
+                    </div>
+                    <p>lorem ipsum</p>
+                </div>
+                <div class="review-person">
+                    <!-- Dodaj zdjecie -->
+                    <img src="" alt="person"> 
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</section>
+
+    <!-- Contact Form -->
+    <section id="form" class="section-padding">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center">
+                    <div class="section-title">
+                        <h1 class="display-4 fw-semibold">Formularz kontaktowy</h1>
+                        <div class="line"></div>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <form id="contactForm" class="needs-validation" novalidate>
+                        <div class="mb-3">
+                            <label for="name" class="form-label">Imię i nazwisko</label>
+                            <input type="text" class="form-control" id="name" required>
+                            <div class="invalid-feedback">Proszę podać imię i nazwisko.</div>
+                        </div>
+                        <div class="mb-3">
+                            <label for="email" class="form-label">Email</label>
+                            <input type="email" class="form-control" id="email" required>
+                            <div class="invalid-feedback">Proszę podać prawidłowy adres email.</div>
+                        </div>
+                        <div class="mb-3">
+                            <label for="message" class="form-label">Wiadomość</label>
+                            <textarea class="form-control" id="message" rows="5" required></textarea>
+                            <div class="invalid-feedback">Proszę wpisać treść wiadomości.</div>
+                        </div>
+                        <div class="d-grid">
+                            <button class="btn btn-brand" type="submit">Wyślij</button>
+                        </div>
+                        <div id="loadingSpinner" class="text-center mt-3">
+                            <div class="spinner-border text-primary" role="status">
+                                <span class="visually-hidden">Ładowanie...</span>
+                            </div>
+                        </div>
+                        <div id="successMessage" class="alert alert-success mt-3" role="alert">
+                            Twoja wiadomość została wysłana pomyślnie!
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Kontakt -->
+    <section id="contact" class="bg-white text-dark section-padding border-top">
+        <div class="container">
+            <div class="row justify-content-between align-items-center">
+                <div class="col-lg-5">
+                    <div class="section-title">
+                        <h1 class="display-4 fw-semibold">Kontakt</h1>
+                        <div class="line"></div>
+                    </div>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    <ul class="list-unstyled">
+                        <li class="mb-3">
+                            <i class="ri-map-pin-2-line"></i> Lorem ipsum dolor sit amet
+                        </li>
+                        <li class="mb-3">
+                            <i class="ri-mail-send-line"></i> email@example.com
+                        </li>
+                        <li class="mb-3">
+                            <i class="ri-phone-line"></i> +48 123 456 789
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-lg-6">
+                    <img src="img/contact.png" alt="Contact Image">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white text-center p-3">
+        <p class="mb-0">&copy; 2024 Speszal Forses. All rights reserved.</p>
+    </footer>
+
+    <!-- scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox.umd.js"></script>
+    <script>
+        // Validation
+        (function () {
+            'use strict'
+
+            var forms = document.querySelectorAll('.needs-validation')
+
+            Array.prototype.slice.call(forms)
+                .forEach(function (form) {
+                    form.addEventListener('submit', function (event) {
+                        event.preventDefault();
+                        event.stopPropagation();
+
+                        if (form.checkValidity()) {
+                            document.getElementById('loadingSpinner').style.display = 'block';
+
+                            setTimeout(function () {
+                                document.getElementById('loadingSpinner').style.display = 'none';
+                                document.getElementById('successMessage').style.display = 'block';
+                                form.reset();
+                                form.classList.remove('was-validated');
+                            }, 2000);
+                        } else {
+                            form.classList.add('was-validated');
+                        }
+                    }, false)
+                })
+        })()
+    </script>
+</body>
+
+</html>
