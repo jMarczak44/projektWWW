@@ -82,3 +82,28 @@ document.addEventListener('DOMContentLoaded', function ()
 
   }, false);
 });
+
+
+   // Funkcja do animowania liczb
+   function animateValue(id, start, end, duration) {
+    var range = end - start;
+    var current = start;
+    var increment = end > start ? 1 : -1;
+    var stepTime = Math.abs(Math.floor(duration / range / 1000)); // Przyspieszamy liczenie dzieląc przez 2
+    var obj = document.getElementById(id);
+    var timer = setInterval(function() {
+        current += increment;
+        obj.textContent = current;
+        if (current == end) {
+            clearInterval(timer);
+        }
+    }, stepTime);
+}
+
+// Wywołanie funkcji animateValue dla każdej liczby
+animateValue("stat-1", 1000, 3300, 2000); // Animuj od 0 do 3300 w ciągu 2 sekund
+animateValue("stat-2", 1000, 44000, 2000); // Animuj od 0 do 44000 w ciągu 2 sekund
+animateValue("stat-3", 1000, 77000000, 2000); // Animuj od 0 do 77000000 w ciągu 2 sekund
+
+// Inicjalizacja AOS
+AOS.init();
