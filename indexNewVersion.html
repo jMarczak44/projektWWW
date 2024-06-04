@@ -506,7 +506,7 @@
                 </ul>
             </div>
             <div class="col-lg-6" data-aos="fade-up">
-                <img src="./img/prof.png" alt="Contact Image">
+                <img src="./img/logo 3.png" alt="Contact Image">
             </div>
         </div>
     </div>
@@ -617,7 +617,7 @@
             <div class="container">
                 <div class="row gy-5">
                     <div class="col-lg-3 col-sm-6">
-                        <a href="#"><img src="./img/prof.png" alt=""></a>
+                        <a href="#"><img src="./img/logo_3_transparent.png" alt=""></a>
                         <div class="line"></div>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem, hic!</p>
                         <div class="social-icons">
@@ -689,10 +689,10 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
     <script>
         // Funkcja do animowania liczb
-        function animateValue(id, start, end, duration) {
+        function animateValue(id, start, end, duration,x) {
             var range = end - start;
             var current = start;
-            var increment = end > start ? 1 : -1;
+            var increment = end > start ? x : -x;
             var stepTime = Math.abs(Math.floor(duration / range / 9000000000)); 
             var obj = document.getElementById(id);
             var timer = setInterval(function() {
@@ -705,9 +705,10 @@
         }
     
 
-        animateValue("stat-1", 0, 3300, 5000);
-        animateValue("stat-2", 0, 4400, 5000); 
-        animateValue("stat-3", 0, 7700, 5000); 
+        animateValue("stat-1", 0, 3300, 5000,3);
+        animateValue("stat-2", 0, 4400, 5000,4); 
+        animateValue("stat-3", 0, 9000, 2000,9); // end musi byc podzielne przez x
+
 
         AOS.init();
     </script>
