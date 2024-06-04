@@ -366,3 +366,48 @@ footer .line {
     background-color: var(--c-brand);
     color: white;
 }
+
+/* Podpisy do zdj naszych */
+@keyframes slideIn {
+    from {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+.team-member {
+    position: relative;
+    overflow: hidden;
+    padding: 20px;
+}
+
+.image-zoom-wrapper {
+    position: relative;
+    overflow: hidden;
+}
+
+.team-member img {
+    width: 100%;
+    display: block;
+}
+
+.team-member-caption {
+    position: relative;
+    opacity: 0;  /* Start hidden */
+    transform: translateX(-100%);  /* Start off-screen */
+    animation: slideIn 0.5s forwards 0.5s;  /* Slide in from left */
+}
+
+.team-member-caption h4,
+.team-member-caption p {
+    margin: 10px 0;
+    color: black;  /* Ensure text is black */
+    font-size: 1.25rem;
+    font-weight: bold;
+}
+
+
